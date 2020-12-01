@@ -12,4 +12,5 @@ public class Car {
 	boolean damaged;
 	String color;
 	
+	Engine engine;
 }
