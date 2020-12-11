@@ -1,10 +1,22 @@
 package org.fasttrackit;
 
+
 public class App {
 
 	public static void main(String[] args) {
-	
-		Car carReference = new Car();
+		Game game = new Game();		
+		game.start();
+	    
+		
+		/*Engine autovehicleEngine = new Engine();
+	    autovehicleEngine.manufacturer = "VW";
+		Autovehicle autovehicle = new Autovehicle(autovehicleEngine);
+		
+		Engine engine1 = new Engine();
+		engine1.manufacturer = "Ferrari";
+		engine1.capacity = 3000;
+		
+		Car carReference = new Car(engine1);
 		carReference.name = "Ferrari";
 		carReference.maxSpeed = 300;
 		carReference.fuelLevel = 60;
@@ -14,10 +26,7 @@ public class App {
 		carReference.doorCount = 1;
 		carReference.color = "Red";
 		
-		Engine engine1 = new Engine();
-		engine1.manufacturer = "Ferrari";
-		engine1.capacity = 3000;
-		carReference.engine = engine1;
+		
 		System.out.println("Engine1: " + engine1.capacity);
 		System.out.println("Car engine capacity: " + carReference.engine.capacity);
 		
@@ -34,14 +43,13 @@ public class App {
 		System.out.println("Color: " + carReference.color);
 		
 		
-		Car car2 = new Car();
+		Car car2 = new Car(new Engine());
 		car2.name = "Renault";
 		car2.fuelLevel = 70;
 		car2.totalTraveledDistance = 100;
 		car2.maxSpeed = 300;
 		car2.mileage = 10;
 		
-		car2.engine = new Engine();
 		car2.engine.capacity = 2000;
 		
 		
@@ -63,7 +71,7 @@ public class App {
 		System.out.println("Engine manufacturer before repair: " + carReference.engine.manufacturer);
 		Mechanic mechanic = new Mechanic();
 		mechanic.repair(carReference);
-		System.out.println("Engine manufacturer after repair: " + carReference.engine.manufacturer);
+		System.out.println("Engine manufacturer after repair: " + carReference.engine.manufacturer);*/
 		
 		
 	/*	System.out.println("Initial name of car1: " + carReference.name);
