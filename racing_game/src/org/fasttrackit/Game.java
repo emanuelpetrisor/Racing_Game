@@ -1,6 +1,5 @@
 package org.fasttrackit;
 
-import java.util.Scanner;
 
 import utils.ScannerUtils;
 
