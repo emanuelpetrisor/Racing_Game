@@ -2,6 +2,8 @@ package org.fasttrackit;
 
 public class Vehicle {
 
+	static int totalVehicleCount;
+	
 	String name;
 	double fuelLevel;
 	double mileage;
@@ -9,6 +11,11 @@ public class Vehicle {
 	double maxSpeed;
 	boolean damaged;
 	String color;
+
+	public Vehicle() {
+		totalVehicleCount++;
+	}
+	
 	
 	
 	public double accelerate(double speed, double durationInHours) {
